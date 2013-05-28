@@ -1,0 +1,381 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  Grid
+*/
+
+.main-container {
+	background: none;
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.col-1 {
+	width: 220px;
+}
+.col-2 {
+	width: 460px;
+}
+.col-3 {
+	width: 660px;
+}
+
+.spacer-sm {
+	height: 10px;
+}
+
+.spacer-med {
+	height: 20px;
+}
+
+.spacer-lg {
+	height: 40px;
+}
+
+/*
+  Clearfix
+*/
+
+.group {
+  clear: both;
+  *zoom: 1;
+}
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+
+/*
+  Base Styles
+*/
+
+body {
+	background: none;
+	font: 14px/20px "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+p {
+	margin-bottom: 24px;
+}
+
+/*
+  Typography
+*/
+
+h1 {
+	font-size: 24px;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 48px;
+	margin-bottom: 10px;
+	color: #A31919;
+}
+
+h2 {
+	font-size: 18px;
+	font-style: italic;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+h5 {
+	font-size: 14px;
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold
+}
+/*
+  Header Style
+*/
+
+.repeating-header {
+	background: #D5D5D5;
+  	background: linear-gradient(rgb(100,100,100),rgb(200,200,200));
+	border-bottom: 3px solid black;
+	padding: 20px;
+}
+
+.main-logo a {
+	color: #A31919;
+	font-style: normal;
+	text-decoration: none;
+
+}
+
+.main-logo a:hover {
+	text-decoration: blink;
+	color: black;
+}
+
+/*
+  Nav Style
+*/
+
+.main-nav {
+	text-align: center;
+}
+
+.main-navlist li {
+	display: inline;
+	padding-right: 48px
+}
+
+.main-navlist a {
+	font-size: 20px;
+	font-weight: bold; 
+	text-decoration: none;
+	color: black;
+}
+
+.main-navlist a:hover {
+	text-decoration: blink;
+	color: #A31919;
+}
+
+/*
+  Journal Page Styles
+*/
+
+.journal col-1 {
+	text-align: center;
+}
+
+/*
+  Resume Page Styles
+*/
+
+.resume h1 {
+	font-size: 18px;
+}
+
+.resume h2 {
+	font-size: 16px
+}
+
+.resume h3 {
+	font-size: 14px
+}
+
+.resume strong {
+	font-weight: bold
+}
+
+.resume em {
+	font-style: italic;
+}
+
+.resume li {
+	list-style: square;
+	margin-left: 1.5em; /* which should give space for the disc to show */
+}
+
+.resume footer {
+	text-align: center;
+}
+
+
+
+/*
+  Contact Page Styles
+*/
+
+.col-1 address {
+	font-size: 40px;
+	padding: 0px 40px;
+}
+
+/*
+  Experiment Page Styles
+*/
+
+.experiment col-1 {
+	text-align: center;
+}
+
+.lucky {
+  background: #59BCFF;
+  background-image: url('http://www.google.com/imgres?sa=X&rlz=1C1CHFX_enUS523US523&biw=1280&bih=890&tbm=isch&tbnid=9RrI1DiMTGVIJM:&imgrefurl=http://beast.netne.net/files/images/graphicalworks/&docid=ysBkierlKCFtjM&imgurl=http://beast.netne.net/files/images/graphicalworks/lightbulb.png&w=1024&h=768&ei=qUeJUdrzNuXkygGM3YBw&zoom=1&ved=1t:3588,r:41,s:0,i:297&iact=rc&dur=1166&page=2&tbnh=180&tbnw=245&start=31&ndsp=36&tx=180&ty=136') 15px 50% no-repeat;
+  border-radius: 6px;
+  border: 1px solid gray;
+  color: white;
+  padding: 10px 10px 10px 38px;
+}
+
+.calendar {
+	border: gray solid 1px;
+	border-radius: 8px 8px 8px 8px;
+	overflow: hidden;
+	width: 315px;
+}
+
+.month {
+	background-color: #35a9f6;
+		background-image:
+		url(../images/backarrow.png), 
+		url(../images/nextarrow.png);
+	background-position: 14px 50%, 285px 50%, 25%;
+	background-repeat: no-repeat;
+	background-size: 16px, 16px, auto;
+	border-bottom: gray solid 1px;
+}
+
+.month-year {
+	border-left: gray solid 1px;
+	border-right: gray solid 1px;
+	color: white;
+	font-style: normal;
+	line-height: 40px;
+	margin: 0 auto;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+	width: 229px;
+}
+
+.col-days {
+	background: #f2f2f2;
+	border-bottom: gray solid 1px;
+	line-height: 13px;
+	margin: 0 auto;
+	width: 315px;
+}
+
+.col-days li {
+	color: #797979;
+	display: inline-block;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 18px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+	width: 41px;
+}
+
+.col-calendar li {
+	border: gray solid 1px;
+	float: left;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 43px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+	width: 43px;
+}
+
+audio {
+	width: 220px;
+}
+
+form {
+  border: 1px solid #d0d2d5;
+  border-bottom: 1px solid #bebfc2;
+  border-radius: 4px;
+  padding: 0 20px;
+  width: 400px;
+}
+
+label {
+  color: #404853;
+  display: block;
+  font-weight: bold;
+}
+
+input {
+  border: 1px solid #c6c9cc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 #fff;
+  color: #555;
+  font: 13px/20px 'Droid Sans', Arial, 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  margin: 0 0 20px 0;
+  padding: 5px;
+
+}
+
+textarea {
+  background: #fff;
+  border: 1px solid #c6c9cc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 0 #fff;
+  color: #555;
+  font: 13px/20px 'Droid Sans', Arial, 'Helvetica Neue', 'Lucida Grande', sans-serif;
+  margin: 0 0 20px 0;
+  padding: 5px;
+  width: 380px;
+}
+
+fieldset {
+  background: linear-gradient(top, #ebeced, #dedfe0);
+  border: none;
+  border-bottom: 1px solid #d0d2d5;
+  border-radius: 0 0 4px 4px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+  margin: 0 0 0 -20px;
+  padding: 10px 20px;
+  width: 400px
+}
+
+
